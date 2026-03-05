@@ -17,7 +17,6 @@ bash <(wget -qO- https://get.docker.com) @ -o get-docker.sh
 ```
 
 - Запуск Docker без root
-- Чтобы запускать контейнеры из обычной учётной записи выполните:
 ```bash
 sudo groupadd docker
 ```
