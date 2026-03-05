@@ -125,7 +125,7 @@ https://example.com:8443 {
 ```
 > [!CAUTION]
 > Замените **example.com** на ваш реальный домен в `Caddyfile`, в четырех местах.
-
+- Для маскировки сервера используется [Confluence](https://github.com/Jolymmiles/confluence-marzban-home) 
 - Добавьте страницу для маскировки:
 ```bash
 wget -qO- https://raw.githubusercontent.com/Jolymmiles/confluence-marzban-home/main/index.html  | envsubst > /opt/3x-ui-setup/caddy/templates/index.html
