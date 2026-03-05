@@ -1,0 +1,49 @@
+{
+    https_port 4123
+    default_bind 127.0.0.1
+    servers {
+        listener_wrappers {
+            proxy_protocol {
+                allow 127.0.0.1/32
+            }
+            http_redirect
+            tls
+        }
+    }
+    auto_https disable_redirects
+}
+
+https://example.com {
+    root * /srv
+    file_server
+}
+
+http://example.com {
+    bind 0.0.0.0
+    redir https://example.com{uri} permanent
+}
+
+https://example.com:8443 {
+
+    bind 0.0.0.0
+
+    # Подписка
+    handle /sub/* {
+        reverse_proxy 127.0.0.1:2096
+    }
+
+    # Панель
+    handle {
+        reverse_proxy 127.0.0.1:2053
+    }
+}
+
+:4123 {
+    tls internal
+    respond 204
+}
+
+:80 {
+    bind 0.0.0.0
+    respond 204
+}
