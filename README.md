@@ -123,7 +123,7 @@ https://example.com:8443 {
     respond 204
 }
 ```
-- Замените **example.com** на ваш реальный домен в `Caddyfile`, в четырех местах.
+- Замените **example.com** на ваш реальный домен в `Caddyfile`
  ```bash
   sed -i 's/example.com/ваш.домен.com/g' /opt/3x-ui-setup/caddy/Caddyfile
   ```
