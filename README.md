@@ -128,7 +128,7 @@ https://example.com:8443 {
   sed -i 's/example.com/ваш.домен.com/g' /opt/3x-ui-setup/caddy/Caddyfile
   ```
 Или внимательно заменить вручную в редакторе.
-- Для маскировки сервера используется [Confluence](https://github.com/Jolymmiles/confluence-marzban-home)/
+- Для маскировки сервера используется [Confluence](https://github.com/Jolymmiles/confluence-marzban-home)\
 Добавьте страницу для маскировки:
 ```bash
 wget -qO- https://raw.githubusercontent.com/Jolymmiles/confluence-marzban-home/main/index.html  | envsubst > /opt/3x-ui-setup/caddy/templates/index.html
