@@ -124,9 +124,9 @@ https://example.com:8443 {
 }
 ```
 - Замените **example.com** на ваш реальный домен в `Caddyfile`
- ```bash
-  sed -i 's/example.com/ваш.домен.com/g' /opt/3x-ui-setup/caddy/Caddyfile
-  ```
+```bash
+sed -i 's/example.com/ваш.домен.com/g' /opt/3x-ui-setup/caddy/Caddyfile
+```
 Или внимательно заменить вручную в редакторе.
 - Для маскировки сервера используется [Confluence](https://github.com/Jolymmiles/confluence-marzban-home)\
 Добавьте страницу для маскировки:
