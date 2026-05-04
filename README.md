@@ -65,7 +65,7 @@ services:
       - ./caddy/data:/data
       - ./caddy/templates:/srv
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
-    environment:
+#    environment:
 #      TZ: Europe/Moscow
 
   3xui:
