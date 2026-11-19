@@ -57,7 +57,7 @@ nano /opt/3x-ui-setup/docker-compose.yml
 ```bash
 services:
   caddy:
-    image: caddy:2.11
+    image: caddy:2.11.9
     container_name: caddy
     restart: always
     network_mode: host
